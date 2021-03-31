@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-danyadev",
+  "version": "1.0.0",
+  "description": "Конфигурация eslint для разработки своих проектов",
+  "main": "index.js",
+  "repository": "https://github.com/danyadev/eslint-config-danyadev",
+  "author": "danyadev <danyadev@mail.ru>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "eslint-import-resolver-webpack": "^0.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.8.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.2.0"
+  }
+}
