@@ -3,7 +3,8 @@ module.exports = {
 
   settings: {
     'import/resolver': {
-      webpack: { paths: ['./src'] }
+      webpack: { paths: ['./src'] },
+      node: { paths: ['./src'] }
     },
     'import/ignore': []
   },
