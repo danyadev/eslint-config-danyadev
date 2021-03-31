@@ -2,7 +2,9 @@ module.exports = {
   plugins: ['import'],
 
   settings: {
-    'import/resolver': 'webpack',
+    'import/resolver': {
+      webpack: { paths: ['./src'] }
+    },
     'import/ignore': []
   },
 
@@ -221,16 +223,12 @@ module.exports = {
     'vue/html-comment-content-newline': 'error',
     'vue/html-comment-content-spacing': 'error',
     'vue/html-comment-indent': 'error',
-    'vue/no-bare-strings-in-template': 'error',
     'vue/no-duplicate-attr-inheritance': 'error',
     'vue/no-empty-component-block': 'error',
     'vue/no-multiple-objects-in-class': 'error',
     'vue/no-potential-component-option-typo': 'error',
     'vue/no-restricted-v-bind': ['error', '/^v-/', 'click'],
     'vue/no-static-inline-styles': 'error',
-    'vue/no-unregistered-components': ['error', {
-      ignorePatterns: ['(ForwardedMessage|RouterView|Attachments)']
-    }],
     'vue/no-unused-properties': ['error', {
       groups: ['props', 'setup']
     }],
