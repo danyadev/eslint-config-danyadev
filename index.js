@@ -1,14 +1,4 @@
 module.exports = {
-  parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 2019
-  },
-
-  env: {
-    browser: true,
-    es2020: true
-  },
-
   plugins: ['import'],
 
   settings: {
